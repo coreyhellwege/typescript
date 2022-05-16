@@ -49,14 +49,3 @@ TypeScript particulary works well for big projects with multiple developers.
 - More code to write
 - Requires compilation (browsers don't read .ts files)
 
-## Compiling TypeScript
-
-TypeScript uses `.ts` and `.tsx` (for React) file extensions.
-
-TSC (TypeScript Compiler) is used to compile `.ts` files down to JavaScript and can be installed with NPM.
-
-TSC can also just watch files and report errors at compile time.
-
-Many tools (such as Create React App and Next.js) include default TypeScript compilation and most IDEs support it.
-
-The `tsconfig.json` file is used to configure how TypeScript works.

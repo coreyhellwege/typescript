@@ -39,6 +39,13 @@
                 <li>Compiling TypeScript</li>
             </ul>
         </li>
+        <li>
+            <h3><a href="/CompilingTS.md">Compiling TypeScript</a></h3>
+            <ul>
+                <li>TSC</li>
+                <li>Config files</li>
+            </ul>
+        </li>
     </ol>
 </details>
 
