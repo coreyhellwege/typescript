@@ -1,3 +1,3 @@
-let id: number = 1;
+let age: number = 100;
 
-console.log('ID:', id);
+console.log('ID:', age);

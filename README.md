@@ -65,6 +65,12 @@ Check what version you're running
 tsc -v
 ```
 
+Watch the files in your terminal to see the type error examples
+
+```sh
+tsc --watch
+```
+
 <br />
 
 <!-- ACKNOWLEDGMENTS -->

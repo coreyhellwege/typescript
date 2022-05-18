@@ -1,3 +1,3 @@
 "use strict";
-let id = 1;
-console.log('ID:', id);
+let age = 100;
+console.log('ID:', age);
