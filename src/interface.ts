@@ -1,5 +1,9 @@
-// Interface (with objects)
-// Note: Interface can't be used with primitive types or unions
+/* 
+    Interface (with objects)
+    An interface describes the shape of an object in TypeScript. 
+    They specify object property names and the datatypes of their values.
+*/
+
 interface movie {
     title: string,
     actors: string[],
@@ -15,7 +19,7 @@ let blueJasmine: movie = {
 let stepBrothers: movie = {
     title: 'Step Brothers',
     actors: ['Will Ferrell', 'John C. Reilly', 'Adam Scott'],
-    year: '2008' // Type 'string' is not assignable to type 'number'.
+    year: '2008' // Error: Type 'string' is not assignable to type 'number'.
 };
 
 
@@ -23,7 +27,7 @@ let stepBrothers: movie = {
 interface song {
     readonly title: string,
     artist: string,
-    album?: string
+    album?: string // optional
 };
 
 let thriller: song = {
@@ -31,7 +35,7 @@ let thriller: song = {
     artist: 'Michael Jackson'
 };
 
-thriller.title = 'Black or White'; // Cannot assign to 'title' because it is a read-only property.
+thriller.title = 'Black or White'; // Error: Cannot assign to 'title' because it is a read-only property.
 
 // Interface (with functions)
 interface MathFunc {
@@ -40,11 +44,4 @@ interface MathFunc {
 
 let add: MathFunc = (x: number, y: number) => x + y;
 let sub: MathFunc = (x: number, y: number) => x - y;
-
-let fail: MathFunc = (x: number, y: string) => x + y; // Type 'number' is not assignable to type 'string'.
-
-interface PersonInterface {
-    id: number;
-    name: string;
-    register(): string;
-}
+let fail: MathFunc = (x: number, y: string) => x + y; // Error: Type 'number' is not assignable to type 'string'.

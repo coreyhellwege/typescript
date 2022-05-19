@@ -6,5 +6,5 @@ function getArray(items) {
 }
 let numArray = getArray([1, 2, 3, 4, 5]);
 let strArray = getArray(['Dog', 'Cat', 'Bird', 'Horse']);
-strArray.push(5); // Type 'number' is not assignable to type 'string'.
+strArray.push(5); // Error: Type 'number' is not assignable to type 'string'.
 console.log(numArray);

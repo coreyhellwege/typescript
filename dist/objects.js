@@ -7,7 +7,7 @@ car = {
 };
 car = {
     make: 'BMW',
-    year: '2015' // Type 'string' is not assignable to type 'Number'.
+    year: '2015' // Error: Type 'string' is not assignable to type 'Number'.
 };
 let book;
 book = {
@@ -16,5 +16,5 @@ book = {
 };
 book = {
     title: 'The Alchemist',
-    isbn: '352334653' // Type 'string' is not assignable to type 'Number'.
+    isbn: '352334653' // Error: Type 'string' is not assignable to type 'Number'.
 };
